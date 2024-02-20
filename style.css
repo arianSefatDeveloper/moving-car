@@ -36,3 +36,31 @@ body {
     
 }
 
+@keyframes moveRight {
+    100% {
+        transform: translateX(-2950px);
+    }
+}
+
+@keyframes suspension {
+    100% {
+        transform: translateY(-1px);
+    }
+    
+    50% {
+        transform: translateY(2px);
+    }
+    
+    0% {
+        transform: translateY(1px);
+    }
+}
+
+.moveRight {
+    animation: moveRight 6s linear infinite;
+}
+
+.suspension {
+    animation: suspension 1s linear infinite;
+}
+
